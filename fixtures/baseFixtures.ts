@@ -14,6 +14,7 @@ type AuthFixtures = {
 
 export const test = base.extend<AuthFixtures>({
 
+<<<<<<< HEAD
     loggedInPage: async ({ browser }, use,testInfo) => {
         console.log("Fixture Started");
         console.log(`Worker : ${testInfo.workerIndex}`);
@@ -38,10 +39,24 @@ export const test = base.extend<AuthFixtures>({
 
         await use(page)
         console.log("Control returned from test...");
+=======
+    loggedInPage: async ({ browser }, use) => {
+        // ── Setup ─────────────────────────────
+        // Create a new context with saved auth state
+
+        const context: BrowserContext = await browser.newContext({
+            storageState: authFile
+        })
+
+        //Hand authenticated page to test
+        const page: Page = await context.newPage()
+        await use(page)
+>>>>>>> 67d5927c1beae166de0ca5150dc243c144b5e3be
 
         // ── Teardown ─────────────────────────────
         // Close the manually created context
         await context.close()
+<<<<<<< HEAD
         console.log("Closing BrowserContext...");
         console.log("BrowserContext Closed");
         console.log("Fixture Finished");
@@ -59,6 +74,8 @@ export const test = base.extend<AuthFixtures>({
 
             await page.video()?.delete()
         }
+=======
+>>>>>>> 67d5927c1beae166de0ca5150dc243c144b5e3be
 
     }
 

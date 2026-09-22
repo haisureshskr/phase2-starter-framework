@@ -6,6 +6,7 @@
   "directories": {
     "test": "tests"
   },
+<<<<<<< HEAD
   "scripts": {
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
@@ -14,10 +15,17 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anuradha-learn/phase2-starter-framework.git"
+=======
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuradha-learn/playwright-learn-phase2-starter.git"
+>>>>>>> 67d5927c1beae166de0ca5150dc243c144b5e3be
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "bugs": {
     "url": "https://github.com/anuradha-learn/phase2-starter-framework/issues"
   },
@@ -31,5 +39,15 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "xlsx": "^0.18.5"
+=======
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anuradha-learn/playwright-learn-phase2-starter/issues"
+  },
+  "homepage": "https://github.com/anuradha-learn/playwright-learn-phase2-starter#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2"
+>>>>>>> 67d5927c1beae166de0ca5150dc243c144b5e3be
   }
 }
