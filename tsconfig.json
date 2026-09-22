@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    /* Target and Module Settings */
+    "target": "ES2022",                          /* Specify ECMAScript target version */
+    "module": "commonjs",                        /* Specify module code generation */
+    "moduleResolution": "node",              /* Determine how modules get resolved */
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": true
+  }
+}
